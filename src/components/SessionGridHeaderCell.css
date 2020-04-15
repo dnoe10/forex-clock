@@ -1,0 +1,7 @@
+.session-grid-header-cell {
+  width: 8.33%;
+}
+
+.session-grid-header-cell.current-hour {
+  background-color: #B3E5FC;
+}
