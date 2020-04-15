@@ -13,11 +13,7 @@ function generateCells() {
 }
 
 function SessionGridHeader() {
-  return (
-    <div className="session-grid-header">
-      {generateCells()}
-    </div>
-  );
+  return <div className="session-grid-header">{generateCells()}</div>;
 }
 
 export default SessionGridHeader;

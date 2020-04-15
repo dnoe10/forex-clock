@@ -12,12 +12,8 @@ function generateCells() {
   return cells;
 }
 
-function SessionGridRow () {
-  return (
-    <div className="session-grid-row">
-      {generateCells()}
-    </div>
-  );
+function SessionGridRow() {
+  return <div className="session-grid-row">{generateCells()}</div>;
 }
 
 export default SessionGridRow;

@@ -12,7 +12,7 @@ function SessionGrid() {
       <SessionGridRow name="Sydney" theme="Blue" />
       <SessionGridRow name="Tokyo" theme="Yellow" />
     </div>
-  )
+  );
 }
 
 export default SessionGrid;

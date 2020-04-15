@@ -2,7 +2,7 @@ import React from 'react';
 import './SessionGridHeaderCell.css';
 
 function isCurrentHour(props) {
-  return props.hour === (new Date()).getHours() ? 'current-hour' : '';
+  return props.hour === new Date().getHours() ? 'current-hour' : '';
 }
 
 function SessionGridHeaderCell(props) {
