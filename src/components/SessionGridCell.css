@@ -1,4 +1,35 @@
 .session-grid-cell {
-  border-right: 1px solid #bbb;
   flex-grow: 1;
+}
+
+.session-grid-cell.green {
+  background-color: #dcedc8;
+}
+
+.session-grid-cell.green.current-hour {
+  background-color: #66bb6a;
+}
+
+.session-grid-cell.orange {
+  background-color: #ffe0b2;
+}
+
+.session-grid-cell.orange.current-hour {
+  background-color: #ffa726;
+}
+
+.session-grid-cell.blue {
+  background-color: #90caf9;
+}
+
+.session-grid-cell.blue.current-hour {
+  background-color: #42a5f5;
+}
+
+.session-grid-cell.yellow {
+  background-color: #fff59d;
+}
+
+.session-grid-cell.yellow.current-hour {
+  background-color: #ffee58;
 }

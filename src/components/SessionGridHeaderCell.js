@@ -1,16 +1,15 @@
 import React from 'react';
+import { isCurrentHour } from '../helpers/time';
 import './SessionGridHeaderCell.css';
 
-function isCurrentHour(props) {
-  return props.hour === new Date().getHours() ? 'current-hour' : '';
-}
-
 function SessionGridHeaderCell(props) {
-  return (
-    <div className={'session-grid-header-cell ' + isCurrentHour(props)}>
-      {props.hour}
-    </div>
-  );
+  if (isCurrentHour(props.hour)) {
+    return (
+      <div className="session-grid-header-cell current-hour">{props.hour}</div>
+    );
+  }
+
+  return <div className="session-grid-header-cell">{props.hour}</div>;
 }
 
 export default SessionGridHeaderCell;
