@@ -17,7 +17,7 @@ function generateCells(props) {
       classNames += ' current-hour';
     }
 
-    cells.push(<SessionGridCell classNames={classNames} />);
+    cells.push(<SessionGridCell key={i} classNames={classNames} />);
   }
 
   return cells;

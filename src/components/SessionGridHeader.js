@@ -6,7 +6,7 @@ function generateCells() {
   let cells = [];
 
   for (let i = 0; i < 24; i++) {
-    cells.push(<SessionGridHeaderCell hour={i} />);
+    cells.push(<SessionGridHeaderCell key={i} hour={i} />);
   }
 
   return cells;
