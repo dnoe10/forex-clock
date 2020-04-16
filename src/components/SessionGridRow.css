@@ -1,3 +1,11 @@
 .session-grid-row {
   display: flex;
+  position: relative;
+}
+
+.session-grid-row .session-name {
+  color: #757575;
+  left: 0;
+  position: absolute;
+  right: 0;
 }

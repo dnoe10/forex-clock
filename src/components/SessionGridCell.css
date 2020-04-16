@@ -2,6 +2,10 @@
   flex-grow: 1;
 }
 
+.session-grid-cell.current-hour {
+  background-color: #eeeeee;
+}
+
 .session-grid-cell.green {
   background-color: #dcedc8;
 }

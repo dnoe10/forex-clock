@@ -24,7 +24,12 @@ function generateCells(props) {
 }
 
 function SessionGridRow(props) {
-  return <div className={'session-grid-row'}>{generateCells(props)}</div>;
+  return (
+    <div className={'session-grid-row'}>
+      {generateCells(props)}
+      <span className="session-name">{props.name}</span>
+    </div>
+  );
 }
 
 export default SessionGridRow;
