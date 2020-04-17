@@ -9,3 +9,7 @@
   position: absolute;
   right: 0;
 }
+
+.dark-mode .session-grid-row .session-name {
+  color: rgb(190, 185, 175);
+}

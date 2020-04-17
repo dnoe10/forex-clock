@@ -1,6 +1,7 @@
 import React from 'react';
 import SessionGridHeader from './SessionGridHeader';
 import SessionGridRow from './SessionGridRow';
+import SessionGridFooter from './SessionGridFooter';
 import { convertHoursToLocalTimezone } from '../helpers/time';
 import './SessionGrid.css';
 
@@ -20,7 +21,7 @@ function getSessionHours(session) {
   return convertHoursToLocalTimezone(sessionHours);
 }
 
-function SessionGrid() {
+function SessionGrid(props) {
   return (
     <div className="session-grid">
       <SessionGridHeader />
@@ -43,6 +44,10 @@ function SessionGrid() {
         name={TOKYO}
         hours={getSessionHours(TOKYO)}
         theme="yellow"
+      />
+      <SessionGridFooter
+        darkModeEnabled={props.darkModeEnabled}
+        onChangeDarkMode={props.onChangeDarkMode}
       />
     </div>
   );

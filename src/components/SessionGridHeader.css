@@ -2,3 +2,7 @@
   border-bottom: 1px solid #bbb;
   display: flex;
 }
+
+.dark-mode .session-grid-header {
+  border-bottom-color: rgb(65, 65, 65);
+}

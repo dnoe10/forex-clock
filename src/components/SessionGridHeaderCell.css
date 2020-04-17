@@ -5,3 +5,7 @@
 .session-grid-header-cell.current-hour {
   background-color: #b3e5fc;
 }
+
+.dark-mode .session-grid-header-cell.current-hour {
+  background-color: rgb(4, 65, 93);
+}
