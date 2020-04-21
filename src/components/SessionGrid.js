@@ -2,7 +2,7 @@ import React from 'react';
 import SessionGridHeader from './SessionGridHeader';
 import SessionGridRow from './SessionGridRow';
 import SessionGridFooter from './SessionGridFooter';
-import { convertHoursToLocalTimezone } from '../helpers/time';
+import { convertHoursToDifferentTimezone } from '../helpers/time';
 import './SessionGrid.css';
 
 const LONDON = 'London';
@@ -16,38 +16,44 @@ const GMT_SESSION_HOURS = {
   [TOKYO]: [23, 0, 1, 2, 3, 4, 5, 6, 7],
 };
 
-function getSessionHours(session) {
+function getSessionHours(session, timezone) {
   let sessionHours = GMT_SESSION_HOURS[session];
-  return convertHoursToLocalTimezone(sessionHours);
+  return convertHoursToDifferentTimezone(sessionHours, timezone);
 }
 
 function SessionGrid(props) {
   return (
     <div className="session-grid">
-      <SessionGridHeader />
+      <SessionGridHeader currentHour={props.currentHour} />
       <SessionGridRow
+        currentHour={props.currentHour}
         name={LONDON}
-        hours={getSessionHours(LONDON)}
+        hours={getSessionHours(LONDON, props.timezone)}
         theme="green"
       />
       <SessionGridRow
+        currentHour={props.currentHour}
         name={NEW_YORK}
-        hours={getSessionHours(NEW_YORK)}
+        hours={getSessionHours(NEW_YORK, props.timezone)}
         theme="orange"
       />
       <SessionGridRow
+        currentHour={props.currentHour}
         name={SYDNEY}
-        hours={getSessionHours(SYDNEY)}
+        hours={getSessionHours(SYDNEY, props.timezone)}
         theme="blue"
       />
       <SessionGridRow
+        currentHour={props.currentHour}
         name={TOKYO}
-        hours={getSessionHours(TOKYO)}
+        hours={getSessionHours(TOKYO, props.timezone)}
         theme="yellow"
       />
       <SessionGridFooter
         darkModeEnabled={props.darkModeEnabled}
         onChangeDarkMode={props.onChangeDarkMode}
+        onChangeTimezone={props.onChangeTimezone}
+        timezone={props.timezone}
       />
     </div>
   );

@@ -1,6 +1,12 @@
 .dark-mode-button {
-  border-radius: 3em;
-  padding: 0.5em;
+  border-radius: 2vw;
+  left: 4vw;
+  padding: 0.5vw;
+  position: relative;
+}
+
+.dark-mode .dark-mode-button {
+  border-color: #575757;
 }
 
 .dark-mode-button:focus {
@@ -16,6 +22,6 @@
 }
 
 .dark-mode-button svg {
-  height: 3em;
-  width: 3em;
+  height: 1.5vw;
+  width: 2.5vw;
 }

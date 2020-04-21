@@ -1,3 +1,10 @@
+button {
+  background: none;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  padding: 0;
+}
+
 .app {
   color: #424242;
   height: 100%;
@@ -7,11 +14,4 @@
 .app.dark-mode {
   background-color: #181a1b;
   color: rgb(208, 205, 198);
-}
-
-button {
-  background: none;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  padding: 0;
 }

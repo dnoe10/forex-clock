@@ -1,0 +1,14 @@
+.timezone-select {
+  border-radius: 2vw;
+  cursor: pointer;
+  font: 1vw 'Varela Round', sans-serif;
+  left: 2vw;
+  padding: 0.5vw;
+  position: relative;
+}
+
+.dark-mode .timezone-select {
+  background-color: #181a1b;
+  border-color: #575757;
+  color: rgb(190, 185, 175);
+}

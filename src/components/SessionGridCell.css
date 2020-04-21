@@ -6,35 +6,35 @@
   background-color: #eeeeee;
 }
 
-.session-grid-cell.green {
+.green .session-grid-cell.market-open {
   background-color: #dcedc8;
 }
 
-.session-grid-cell.green.current-hour {
+.green .session-grid-cell.market-open.current-hour {
   background-color: #66bb6a;
 }
 
-.session-grid-cell.orange {
+.orange .session-grid-cell.market-open {
   background-color: #ffe0b2;
 }
 
-.session-grid-cell.orange.current-hour {
+.orange .session-grid-cell.market-open.current-hour {
   background-color: #ffa726;
 }
 
-.session-grid-cell.blue {
+.blue .session-grid-cell.market-open {
   background-color: #90caf9;
 }
 
-.session-grid-cell.blue.current-hour {
+.blue .session-grid-cell.market-open.current-hour {
   background-color: #42a5f5;
 }
 
-.session-grid-cell.yellow {
+.yellow .session-grid-cell.market-open {
   background-color: #fff59d;
 }
 
-.session-grid-cell.yellow.current-hour {
+.yellow .session-grid-cell.market-open.current-hour {
   background-color: #ffee58;
 }
 
@@ -42,34 +42,34 @@
   background-color: rgb(29, 31, 32);
 }
 
-.dark-mode .session-grid-cell.green {
+.dark-mode .green .session-grid-cell.market-open {
   background-color: rgb(44, 63, 21);
 }
 
-.dark-mode .session-grid-cell.green.current-hour {
+.dark-mode .green .session-grid-cell.market-open.current-hour {
   background-color: rgb(44, 99, 47);
 }
 
-.dark-mode .session-grid-cell.orange {
+.dark-mode .orange .session-grid-cell.market-open {
   background-color: rgb(97, 58, 0);
 }
 
-.dark-mode .session-grid-cell.orange.current-hour {
+.dark-mode .orange .session-grid-cell.market-open.current-hour {
   background-color: rgb(181, 108, 0);
 }
 
-.dark-mode .session-grid-cell.blue {
+.dark-mode .blue .session-grid-cell.market-open {
   background-color: rgb(6, 64, 112);
 }
 
-.dark-mode .session-grid-cell.blue.current-hour {
+.dark-mode .blue .session-grid-cell.market-open.current-hour {
   background-color: rgb(8, 90, 156);
 }
 
-.dark-mode .session-grid-cell.yellow {
+.dark-mode .yellow .session-grid-cell.market-open {
   background-color: rgb(110, 99, 0);
 }
 
-.dark-mode .session-grid-cell.yellow.current-hour {
+.dark-mode .yellow .session-grid-cell.market-open.current-hour {
   background-color: rgb(151, 136, 0);
 }
