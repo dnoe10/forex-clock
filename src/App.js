@@ -11,6 +11,21 @@ class App extends React.Component {
       darkModeEnabled: false,
       timezone: moment.tz.guess(),
     };
+    this.state.currentHour = getCurrentHour(this.state.timezone);
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () =>
+        this.setState((state) => ({
+          currentHour: getCurrentHour(state.timezone),
+        })),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
   }
 
   onChangeDarkMode = () => {
@@ -20,14 +35,15 @@ class App extends React.Component {
   };
 
   onChangeTimezone = (e) => {
-    this.setState({ timezone: e.target.value });
+    let timezone = e.target.value;
+    this.setState({ currentHour: getCurrentHour(timezone), timezone });
   };
 
   render() {
     return (
       <div className={'app ' + (this.state.darkModeEnabled ? 'dark-mode' : '')}>
         <SessionGrid
-          currentHour={getCurrentHour(this.state.timezone)}
+          currentHour={this.state.currentHour}
           darkModeEnabled={this.state.darkModeEnabled}
           onChangeDarkMode={this.onChangeDarkMode}
           onChangeTimezone={this.onChangeTimezone}
