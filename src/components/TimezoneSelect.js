@@ -5,6 +5,7 @@ function TimezoneSelect(props) {
   return (
     <select
       className="timezone-select"
+      title="Select a timezone"
       value={props.timezone}
       onChange={props.onChangeTimezone}
     >

@@ -1,6 +1,6 @@
 .dark-mode-button {
   border-radius: 2vw;
-  left: 4vw;
+  left: -4vw;
   padding: 0.5vw;
   position: relative;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Clock from './Clock';
 import DarkModeButton from './DarkModeButton';
 import TimezoneSelect from './TimezoneSelect';
 import './SessionGridFooter.css';
@@ -6,8 +7,8 @@ import './SessionGridFooter.css';
 function SessionGridFooter(props) {
   return (
     <div className="session-grid-footer">
+      <Clock timezone={props.timezone}></Clock>
       <TimezoneSelect
-        currentTimezone={props.currentTimezone}
         onChangeTimezone={props.onChangeTimezone}
         timezone={props.timezone}
       />

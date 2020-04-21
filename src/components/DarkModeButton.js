@@ -7,9 +7,9 @@ function DarkModeButton(props) {
   let button;
 
   if (props.darkModeEnabled) {
-    button = <SunLogo title="disable dark mode" />;
+    button = <SunLogo title="Disable dark mode" />;
   } else {
-    button = <MoonLogo title="enable dark mode" />;
+    button = <MoonLogo title="Enable dark mode" />;
   }
 
   return (
