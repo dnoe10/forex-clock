@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.timezone-select:focus {
+  outline: none;
+}
+
 .dark-mode .timezone-select {
   background-color: #181a1b;
   border-color: #575757;

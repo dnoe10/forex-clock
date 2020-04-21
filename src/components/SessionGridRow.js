@@ -10,6 +10,8 @@ function generateCells(props) {
       <SessionGridCell
         key={i}
         currentHour={props.currentHour === i}
+        firstHour={props.hours[0] === i}
+        lastHour={props.hours[props.hours.length - 1] === i}
         marketOpen={props.hours.includes(i)}
       />
     );

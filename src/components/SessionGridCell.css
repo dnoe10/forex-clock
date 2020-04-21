@@ -6,6 +6,14 @@
   background-color: #eeeeee;
 }
 
+.session-grid-cell.first-hour {
+  border-radius: 2vw 0 0 2vw;
+}
+
+.session-grid-cell.last-hour {
+  border-radius: 0 2vw 2vw 0;
+}
+
 .green .session-grid-cell.market-open {
   background-color: #dcedc8;
 }
