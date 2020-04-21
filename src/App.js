@@ -8,7 +8,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      darkModeEnabled: false,
+      darkModeEnabled:
+        window.localStorage.getItem('darkModeEnabled') === 'true',
       timezone: moment.tz.guess(),
     };
     this.state.currentHour = getCurrentHour(this.state.timezone);
@@ -29,9 +30,10 @@ class App extends React.Component {
   }
 
   onChangeDarkMode = () => {
-    this.setState((state) => ({
-      darkModeEnabled: !state.darkModeEnabled,
-    }));
+    this.setState((state) => {
+      window.localStorage.setItem('darkModeEnabled', !state.darkModeEnabled);
+      return { darkModeEnabled: !state.darkModeEnabled };
+    });
   };
 
   onChangeTimezone = (e) => {
