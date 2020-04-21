@@ -1,83 +1,92 @@
 .session-grid-cell {
   flex-grow: 1;
+  position: relative;
 }
 
 .session-grid-cell.current-hour {
   background-color: #eeeeee;
 }
 
-.session-grid-cell.first-hour {
-  border-radius: 2vw 0 0 2vw;
-}
-
-.session-grid-cell.last-hour {
-  border-radius: 0 2vw 2vw 0;
-}
-
-.green .session-grid-cell.market-open {
-  background-color: #dcedc8;
-}
-
-.green .session-grid-cell.market-open.current-hour {
-  background-color: #66bb6a;
-}
-
-.orange .session-grid-cell.market-open {
-  background-color: #ffe0b2;
-}
-
-.orange .session-grid-cell.market-open.current-hour {
-  background-color: #ffa726;
-}
-
-.blue .session-grid-cell.market-open {
-  background-color: #90caf9;
-}
-
-.blue .session-grid-cell.market-open.current-hour {
-  background-color: #42a5f5;
-}
-
-.yellow .session-grid-cell.market-open {
-  background-color: #fff59d;
-}
-
-.yellow .session-grid-cell.market-open.current-hour {
-  background-color: #ffee58;
-}
-
 .dark-mode .session-grid-cell.current-hour {
   background-color: rgb(29, 31, 32);
 }
 
-.dark-mode .green .session-grid-cell.market-open {
+.session-grid-cell-inner {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.session-grid-cell-inner.first-hour {
+  border-radius: 2vw 0 0 2vw;
+}
+
+.session-grid-cell-inner.last-hour {
+  border-radius: 0 2vw 2vw 0;
+}
+
+.green .session-grid-cell-inner.market-open {
+  background-color: #dcedc8;
+}
+
+.green .current-hour .session-grid-cell-inner.market-open {
+  background-color: #66bb6a;
+}
+
+.orange .session-grid-cell-inner.market-open {
+  background-color: #ffe0b2;
+}
+
+.orange .current-hour .session-grid-cell-inner.market-open {
+  background-color: #ffa726;
+}
+
+.blue .session-grid-cell-inner.market-open {
+  background-color: #90caf9;
+}
+
+.blue .current-hour .session-grid-cell-inner.market-open {
+  background-color: #42a5f5;
+}
+
+.yellow .session-grid-cell-inner.market-open {
+  background-color: #fff59d;
+}
+
+.yellow .current-hour .session-grid-cell-inner.market-open {
+  background-color: #ffee58;
+}
+
+.dark-mode .green .session-grid-cell-inner.market-open {
   background-color: rgb(44, 63, 21);
 }
 
-.dark-mode .green .session-grid-cell.market-open.current-hour {
+.dark-mode .green .current-hour .session-grid-cell-inner.market-open {
   background-color: rgb(44, 99, 47);
 }
 
-.dark-mode .orange .session-grid-cell.market-open {
+.dark-mode .orange .session-grid-cell-inner.market-open {
   background-color: rgb(97, 58, 0);
 }
 
-.dark-mode .orange .session-grid-cell.market-open.current-hour {
+.dark-mode .orange .current-hour .session-grid-cell-inner.market-open {
   background-color: rgb(181, 108, 0);
 }
 
-.dark-mode .blue .session-grid-cell.market-open {
+.dark-mode .blue .session-grid-cell-inner.market-open {
   background-color: rgb(6, 64, 112);
 }
 
-.dark-mode .blue .session-grid-cell.market-open.current-hour {
+.dark-mode .blue .current-hour .session-grid-cell-inner.market-open {
   background-color: rgb(8, 90, 156);
 }
 
-.dark-mode .yellow .session-grid-cell.market-open {
+.dark-mode .yellow .session-grid-cell-inner.market-open {
   background-color: rgb(110, 99, 0);
 }
 
-.dark-mode .yellow .session-grid-cell.market-open.current-hour {
+.dark-mode .yellow .current-hour .session-grid-cell-inner.market-open {
   background-color: rgb(151, 136, 0);
 }

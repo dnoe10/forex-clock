@@ -5,14 +5,18 @@ function SessionGridCell(props) {
   return (
     <div
       className={
-        'session-grid-cell ' +
-        (props.currentHour ? 'current-hour ' : '') +
-        (props.firstHour ? 'first-hour ' : '') +
-        (props.lastHour ? 'last-hour ' : '') +
-        (props.marketOpen ? 'market-open ' : '')
+        'session-grid-cell ' + (props.currentHour ? 'current-hour ' : '')
       }
     >
-      &nbsp; &nbsp;
+      &nbsp;&nbsp;
+      <div
+        className={
+          'session-grid-cell-inner ' +
+          (props.marketOpen ? 'market-open ' : '') +
+          (props.firstHour ? 'first-hour ' : '') +
+          (props.lastHour ? 'last-hour ' : '')
+        }
+      ></div>
     </div>
   );
 }
