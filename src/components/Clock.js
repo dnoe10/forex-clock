@@ -5,8 +5,11 @@ import './Clock.css';
 function Clock(props) {
   return (
     <div className="clock">
-      <div>{moment().tz(props.timezone).format()}</div>
-      <div>{moment().tz(props.timezone).utc().format()}</div>
+      <div>
+        Local time:{' '}
+        {moment().tz(props.timezone).format('dddd, MMMM Do YYYY, h:mm:ss a')}
+      </div>
+      <div>UTC: {moment().utc().format('dddd, MMMM Do YYYY, h:mm:ss a')}</div>
     </div>
   );
 }
