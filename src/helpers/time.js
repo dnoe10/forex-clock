@@ -1,5 +1,9 @@
 import moment from 'moment-timezone';
 
+const SUNDAY = 0;
+const FRIDAY = 5;
+const SATURDAY = 6;
+
 function convertHourToDifferentTimeZone(hour, timezone) {
   let offset = moment.tz.zone(timezone).utcOffset(moment()) / 60;
 
@@ -31,4 +35,5 @@ function getCurrentHour(timezone) {
   return moment().tz(timezone).hour();
 }
 
+export { SUNDAY, FRIDAY, SATURDAY };
 export { convertHoursToDifferentTimezone, getCurrentHour };

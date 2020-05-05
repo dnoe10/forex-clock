@@ -30,24 +30,28 @@ function SessionGrid(props) {
         name={LONDON}
         hours={getSessionHours(LONDON, props.timezone)}
         theme="green"
+        timezone={props.timezone}
       />
       <SessionGridRow
         currentHour={props.currentHour}
         name={NEW_YORK}
         hours={getSessionHours(NEW_YORK, props.timezone)}
         theme="orange"
+        timezone={props.timezone}
       />
       <SessionGridRow
         currentHour={props.currentHour}
         name={SYDNEY}
         hours={getSessionHours(SYDNEY, props.timezone)}
         theme="blue"
+        timezone={props.timezone}
       />
       <SessionGridRow
         currentHour={props.currentHour}
         name={TOKYO}
         hours={getSessionHours(TOKYO, props.timezone)}
         theme="yellow"
+        timezone={props.timezone}
       />
       <SessionGridFooter
         darkModeEnabled={props.darkModeEnabled}

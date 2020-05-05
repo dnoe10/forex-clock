@@ -12,7 +12,8 @@ function SessionGridCell(props) {
       <div
         className={
           'session-grid-cell-inner ' +
-          (props.marketOpen ? 'market-open ' : '') +
+          (props.marketClosed ? 'market-closed ' : '') +
+          (props.sessionOpen ? 'session-open ' : '') +
           (props.firstHour ? 'first-hour ' : '') +
           (props.lastHour ? 'last-hour ' : '')
         }
