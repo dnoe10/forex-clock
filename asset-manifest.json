@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/forex-clock/static/css/main.81909f01.chunk.css",
-    "main.js": "/forex-clock/static/js/main.f850b721.chunk.js",
-    "main.js.map": "/forex-clock/static/js/main.f850b721.chunk.js.map",
+    "main.css": "/forex-clock/static/css/main.d9ee93ca.chunk.css",
+    "main.js": "/forex-clock/static/js/main.4bdeb97f.chunk.js",
+    "main.js.map": "/forex-clock/static/js/main.4bdeb97f.chunk.js.map",
     "runtime-main.js": "/forex-clock/static/js/runtime-main.fa025560.js",
     "runtime-main.js.map": "/forex-clock/static/js/runtime-main.fa025560.js.map",
     "static/js/2.e2b0c5c1.chunk.js": "/forex-clock/static/js/2.e2b0c5c1.chunk.js",
     "static/js/2.e2b0c5c1.chunk.js.map": "/forex-clock/static/js/2.e2b0c5c1.chunk.js.map",
     "index.html": "/forex-clock/index.html",
-    "precache-manifest.5249d519889b1fad0e8d19162d35487e.js": "/forex-clock/precache-manifest.5249d519889b1fad0e8d19162d35487e.js",
+    "precache-manifest.2ac8cec674389d4190a4a23c3a409775.js": "/forex-clock/precache-manifest.2ac8cec674389d4190a4a23c3a409775.js",
     "service-worker.js": "/forex-clock/service-worker.js",
-    "static/css/main.81909f01.chunk.css.map": "/forex-clock/static/css/main.81909f01.chunk.css.map",
+    "static/css/main.d9ee93ca.chunk.css.map": "/forex-clock/static/css/main.d9ee93ca.chunk.css.map",
     "static/js/2.e2b0c5c1.chunk.js.LICENSE.txt": "/forex-clock/static/js/2.e2b0c5c1.chunk.js.LICENSE.txt",
     "static/media/moon.d4e6dda7.svg": "/forex-clock/static/media/moon.d4e6dda7.svg",
     "static/media/sun.361e278b.svg": "/forex-clock/static/media/sun.361e278b.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.fa025560.js",
     "static/js/2.e2b0c5c1.chunk.js",
-    "static/css/main.81909f01.chunk.css",
-    "static/js/main.f850b721.chunk.js"
+    "static/css/main.d9ee93ca.chunk.css",
+    "static/js/main.4bdeb97f.chunk.js"
   ]
 }
