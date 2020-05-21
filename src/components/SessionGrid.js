@@ -3,7 +3,7 @@ import SessionGridHeader from './SessionGridHeader';
 import SessionGridRow from './SessionGridRow';
 import SessionGridFooter from './SessionGridFooter';
 import { convertHoursToDifferentTimezone } from '../helpers/time';
-import './SessionGrid.css';
+import './SessionGrid.scss';
 
 const LONDON = 'London';
 const NEW_YORK = 'New York';

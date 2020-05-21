@@ -11,8 +11,10 @@
   outline: none;
 }
 
-.dark-mode .timezone-select {
-  background-color: #181a1b;
-  border-color: #575757;
-  color: rgb(190, 185, 175);
+.dark-mode {
+  .timezone-select {
+    background-color: #181a1b;
+    border-color: #575757;
+    color: rgb(190, 185, 175);
+  }
 }

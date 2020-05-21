@@ -1,6 +1,6 @@
 import React from 'react';
 import SessionGridHeaderCell from './SessionGridHeaderCell';
-import './SessionGridHeader.css';
+import './SessionGridHeader.scss';
 
 function generateCells(currentHour) {
   let cells = [];

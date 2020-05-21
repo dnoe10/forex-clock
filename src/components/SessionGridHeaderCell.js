@@ -1,5 +1,5 @@
 import React from 'react';
-import './SessionGridHeaderCell.css';
+import './SessionGridHeaderCell.scss';
 
 function SessionGridHeaderCell(props) {
   return (

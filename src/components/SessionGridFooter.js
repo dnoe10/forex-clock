@@ -2,7 +2,7 @@ import React from 'react';
 import Clock from './Clock';
 import DarkModeButton from './DarkModeButton';
 import TimezoneSelect from './TimezoneSelect';
-import './SessionGridFooter.css';
+import './SessionGridFooter.scss';
 
 function SessionGridFooter(props) {
   return (

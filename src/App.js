@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment-timezone';
 import SessionGrid from './components/SessionGrid';
 import { getCurrentHour } from './helpers/time';
-import './App.css';
+import './App.scss';
 
 class App extends React.Component {
   constructor() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment-timezone';
-import './Clock.css';
+import './Clock.scss';
 
 function Clock(props) {
   return (

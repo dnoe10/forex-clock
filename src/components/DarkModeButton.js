@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as MoonLogo } from '../images/moon.svg';
 import { ReactComponent as SunLogo } from '../images/sun.svg';
-import './DarkModeButton.css';
+import './DarkModeButton.scss';
 
 function DarkModeButton(props) {
   let button;

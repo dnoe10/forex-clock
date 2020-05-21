@@ -1,5 +1,5 @@
 import React from 'react';
-import './TimezoneSelect.css';
+import './TimezoneSelect.scss';
 
 function TimezoneSelect(props) {
   return (

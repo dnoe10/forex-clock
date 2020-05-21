@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment-timezone';
 import { SUNDAY, FRIDAY, SATURDAY } from '../helpers/time';
 import SessionGridCell from './SessionGridCell';
-import './SessionGridRow.css';
+import './SessionGridRow.scss';
 
 function isMarketClosed(timezone, hour) {
   let utcMoment = moment().tz(timezone).hour(hour).tz('UTC');

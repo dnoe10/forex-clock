@@ -1,5 +1,5 @@
 import React from 'react';
-import './SessionGridCell.css';
+import './SessionGridCell.scss';
 
 function SessionGridCell(props) {
   return (
