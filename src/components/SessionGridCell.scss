@@ -1,7 +1,8 @@
 .session-grid-cell {
   box-sizing: border-box;
-  flex-grow: 1;
+  display: inline-block;
   position: relative;
+  width: 4.1667%;
 }
 
 .session-grid-cell.current-hour {
@@ -183,7 +184,7 @@
       background-color: rgb(8, 90, 156);
     }
 
-    .dark-mode .blue .session-grid-cell-inner.market-closed.session-open {
+    .session-grid-cell-inner.market-closed.session-open {
       background-color: inherit;
       border-bottom: 0.1vw solid rgb(6, 64, 112);
       border-top: 0.1vw solid rgb(6, 64, 112);
