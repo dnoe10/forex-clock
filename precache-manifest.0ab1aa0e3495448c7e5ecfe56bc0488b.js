@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fc02b1d11bab07224f5212c920eeee5",
+    "revision": "7f469675d2eea44daef7c0b3fe58eec1",
     "url": "/forex-clock/index.html"
   },
   {
-    "revision": "7d502ab82531c25ecfc0",
-    "url": "/forex-clock/static/css/main.2236fd77.chunk.css"
+    "revision": "e563882e3dec6f618e00",
+    "url": "/forex-clock/static/css/main.8bb28e6b.chunk.css"
   },
   {
     "revision": "eaf262e9e30668cbcb27",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/forex-clock/static/js/2.e2b0c5c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7d502ab82531c25ecfc0",
+    "revision": "e563882e3dec6f618e00",
     "url": "/forex-clock/static/js/main.4bdeb97f.chunk.js"
   },
   {

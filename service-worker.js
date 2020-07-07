@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/forex-clock/precache-manifest.cb66419ca63897f69a11b7e721a6c477.js"
+  "/forex-clock/precache-manifest.0ab1aa0e3495448c7e5ecfe56bc0488b.js"
 );
 
 self.addEventListener('message', (event) => {
