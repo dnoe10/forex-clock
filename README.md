@@ -6,11 +6,11 @@ Forex Clock is a simple application you can use to visualize various forex sessi
 
 When the forex market is closed, sessions will appear as an outline only instead of as a filled bar:
 
-![screenshot of the app](https://i.imgur.com/2bSNVGg.png)
+![screenshot of the app](https://i.imgur.com/CPaNWCK.png)
 
 There is a dark mode too!
 
-![screenshot of the app in dark mode](https://i.imgur.com/ERjggxN.png)
+![screenshot of the app in dark mode](https://i.imgur.com/jZjELNf.png)
 
 ## To Do
 
